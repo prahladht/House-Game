@@ -1,7 +1,5 @@
-
-
 body {
-    margin: 0px;
+    margin: 0;
 }
 
 .card-number {
@@ -16,131 +14,104 @@ body {
 .numbers-container {
     background-size: cover;
     min-height: 100vh;
-    height: 100%;
-    /* background-color: Green; */
-    background-image: url("https://images.unsplash.com/photo-1567359781514-3b964e2b04d6?q=80&w=2068&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("https://images.unsplash.com/photo-1567359781514-3b964e2b04d6?q=80&w=2068&auto=format&fit=crop");
 }
 
-@media screen and (min-width: 768px) {
-    .checked {
-        color: black;
-        text-decoration: line-through;
-        background-color: white;
-    }
-
+/* ✅ Checked style applies everywhere */
+.checked {
+    color: black !important;
+    background-color: white !important;
+    text-decoration: line-through;
 }
 
-.list-s {
-    list-style-type: none;
-}
-
+/* Number buttons */
 .btn-style {
-    height: 35px;
-    width: 35px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
-    border-style: solid;
+    border: 2px solid black;
     background-color: transparent;
-    font-size: 15px;
-    margin: 8px;
+    font-size: 16px;
+    margin: 6px;
     color: white;
     font-weight: 700;
-    border-color: black;
+    transition: 0.3s;
 }
 
-@media screen and (max-width: 768px) {
+.btn-style:hover {
+    background-color: #ff9800;
+    color: white;
+}
+
+/* 📱 Mobile */
+@media screen and (max-width: 767px) {
+    .btn-style {
+        height: 40px;
+        width: 40px;
+        font-size: 14px;
+        border-color: #ed79e3;
+    }
+}
+
+/* 📲 Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .btn-style {
         height: 50px;
         width: 50px;
-        border-radius: 50%;
-        border-style: solid;
-        background-color: transparent;
         font-size: 18px;
-        margin: 8px;
-        color: white;
-        font-weight: 600;
-        border-color: #ed79e3;
     }
-
-    .checked {
-        color: black;
-        background-color: white;
-        text-decoration: line-through;
-    }
-
 }
 
-.button {
-    background-color: #ebc286;
-    border-style: none;
-    height: 80px;
-    width: 120px;
-    font-size: 40px;
+/* 💻 Laptop / Desktop */
+@media screen and (min-width: 1024px) {
+    .btn-style {
+        height: 60px;
+        width: 60px;
+        font-size: 20px;
+    }
+}
+
+/* Other controls */
+.click-button,
+.history-button {
+    background-color: orange;
+    height: 40px;
+    width: 80px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: white;
+    border: 2px solid white;
+    margin: 10px;
 }
 
 .display-number {
     height: 40px;
     width: 80px;
-    border-color: orange;
+    border: 2px solid orange;
     background-color: transparent;
-    border-style: solid;
     color: white;
     font-size: 25px;
     border-radius: 10px;
     font-weight: bold;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin: 10px;
+    text-align: center;
 }
 
 .display-number1 {
     height: 40px;
     width: 80px;
-    border-color: orange;
+    border: 2px solid orange;
     background-color: transparent;
-    border-style: solid;
     color: white;
     font-size: 13px;
     border-radius: 10px;
     font-weight: 500;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin: 10px;
     text-align: center;
 }
 
-.click-button {
-    background-color: orange;
-    margin-top: 10px;
-    height: 40px;
-    width: 80px;
-    font-size: 18px;
-    border-radius: 10px;
-    color: white;
-    border-color: white;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
-
-.history-button {
-    background-color: orange;
-    margin-top: 10px;
-    height: 40px;
-    width: 80px;
-    font-size: 18px;
-    border-radius: 10px;
-    color: white;
-    border-color: white;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-.color {
-    background-color: red;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-}
-
 .history-container {
-    background-image: url("https://images.unsplash.com/photo-1528459709161-157d86910939?q=80&w=1789&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("https://images.unsplash.com/photo-1528459709161-157d86910939?q=80&w=1789&auto=format&fit=crop");
     background-size: cover;
     min-height: 100vh;
     color: black;
@@ -150,7 +121,7 @@ body {
 
 .back-game {
     background-color: transparent;
-    border-color: #c206c2;
+    border: 2px solid #c206c2;
     border-radius: 5px;
     height: 50px;
     width: 120px;
@@ -160,7 +131,5 @@ body {
 .back-game-button {
     display: flex;
     justify-content: flex-end;
-    margin-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    margin: 20px;
 }
