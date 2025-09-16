@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number Game</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Game</title>
 
-    <!-- ✅ Link CSS file -->
-    <link rel="stylesheet" href="style.css">
+  <!-- CSS file -->
+  <link rel="stylesheet" href="style.css">
 
-    <!-- ✅ Link JS file -->
-    <script src="script.js" defer></script>
+  <!-- JavaScript file -->
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Number Game</h1>
-        <button onclick="compareNumbers()">Click</button>
-        <div id="displayNumber"></div>
+  <div class="container">
+    <h1>🎲 Number Game 🎲</h1>
+    <p>Click a number to play!</p>
 
-        <div class="grid">
-            <!-- ✅ Example: buttons from 1 to 10, add more if needed -->
-            <button id="button1" class="btn-style">1</button>
-            <button id="button2" class="btn-style">2</button>
-            <button id="button3" class="btn-style">3</button>
-            <button id="button4" class="btn-style">4</button>
-            <button id="button5" class="btn-style">5</button>
-            <button id="button6" class="btn-style">6</button>
-            <button id="button7" class="btn-style">7</button>
-            <button id="button8" class="btn-style">8</button>
-            <button id="button9" class="btn-style">9</button>
-            <button id="button10" class="btn-style">10</button>
-        </div>
+    <div class="button-container">
+      <button class="btn-style">1</button>
+      <button class="btn-style">2</button>
+      <button class="btn-style">3</button>
+      <button class="btn-style">4</button>
+      <button class="btn-style">5</button>
+      <button class="btn-style">6</button>
+      <button class="btn-style">7</button>
+      <button class="btn-style">8</button>
+      <button class="btn-style">9</button>
+      <button class="btn-style">10</button>
     </div>
+
+    <button id="resetBtn">🔄 Reset</button>
+  </div>
 </body>
 </html>
