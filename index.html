@@ -1,36 +1,35 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Game</title>
+
+    <!-- ✅ Link CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ✅ Link JS file -->
+    <script src="script.js" defer></script>
 </head>
-
 <body>
-    <div class="numbers-container" id="mainContainer">
+    <div class="container">
+        <h1>Number Game</h1>
+        <button onclick="compareNumbers()">Click</button>
+        <div id="displayNumber"></div>
 
-        <div id="numberContainer" class="card-number">
-        </div>
-        <div class="buttons-container">
-            <button class="display-number" id="displyNumber"></button>
-            <button class="display-number1" id="clearGame">Clear Game</button>
-        </div>
-        <br />
-        <div class="buttons-container">
-            <button id="genrateButton" class="click-button">Click</button>
-            <button id="historyButton" class="history-button">
-                <a herf="#" target="_blank" onclick="goToHistory()" class="a-style">History</a></button>
-        </div>
-    </div>
-    <!-- <div class="history-container d-none"> -->
-    <div id="historyMainContainer" onclick="backToGame()" class="history-container d-none">
-        <div class="back-game-button">
-            <button id="backToGame" class="back-game">Back</button>
+        <div class="grid">
+            <!-- ✅ Example: buttons from 1 to 10, add more if needed -->
+            <button id="button1" class="btn-style">1</button>
+            <button id="button2" class="btn-style">2</button>
+            <button id="button3" class="btn-style">3</button>
+            <button id="button4" class="btn-style">4</button>
+            <button id="button5" class="btn-style">5</button>
+            <button id="button6" class="btn-style">6</button>
+            <button id="button7" class="btn-style">7</button>
+            <button id="button8" class="btn-style">8</button>
+            <button id="button9" class="btn-style">9</button>
+            <button id="button10" class="btn-style">10</button>
         </div>
     </div>
-    <!-- </div> -->
 </body>
-
 </html>
